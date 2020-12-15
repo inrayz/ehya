@@ -8,11 +8,17 @@
   .base
     width: 550px
     margin-right: 25px
+    &__subimg
+      height: 406px
     &__img
-      margin-bottom: 15px
+      height: 195px
+      margin-bottom: 16px
+    &__img-1
+      height: 100%
     &__mainimg
       margin-right: 15px
       width: 310px
+      height: 406px
   .content
     &__title
       margin-top: 7px
@@ -22,6 +28,9 @@
   .card
     width: 220px
     min-height: 385px
+    &__img
+      width: 220px
+      height: 296px
     &__title
       font-size: 19px
     &__price
@@ -73,13 +82,22 @@
     width: 670px
     margin: 0
     &__mainimg
+      height: 493px
       width: 320px
+    &__subimg
+      height: 493px
+    &__img-1
+      height: 100%
     &__img
-      margin-bottom: 30px
+      margin-bottom: 33px
+      height: 230px
   .card
     min-height: 340px
     margin-bottom: 30px
     width: 160px
+    &__img
+      width: 160px
+      height: 215px
   .last
     &-card
       width: 160px
@@ -89,7 +107,19 @@
       &_icon
         padding-top: 55px
         margin-bottom: 15px
+  .swiper
+    &-container
+      width: 630px
+  .reviews
+    &__container
+      width: 630px
+    &-slider
+      &__img
+        margin-bottom: 39px
 @media (max-width: 768px)
+  .hero
+    &__container
+      background-color: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%)
   .trending
     &__container
       max-width: 608px
@@ -162,15 +192,217 @@
         margin-bottom: 25px
       &_info
         font-size: 24px
-  .swiper
-    &-container
-      width: 630px
-  .reviews
-    &__container
-      width: 630px
-    &-slider
-      &__img
-        margin-bottom: 39px
+
   .text
     &_visible
       display: none
+@media  ( max-width:690px)
+  .hero
+    &__container
+      &::before
+        width: 125%
+  .collection
+    &__container
+      width: 445px
+  .base
+    width: 445px
+    &__mainimg
+      height: 332px
+    &__subimg
+      height: 332px
+    &__img
+      margin-bottom: 24px
+      height: 154px
+    &__img-1
+      height: 100%
+  //   display: block
+  //   &__subimg
+  //     flex-direction: inherit
+@media (max-width: 635px)
+  .trending
+    &__container
+      max-width: 98%
+@media (max-width: 595px)
+  .trending
+    &__container
+      max-width: 84%
+  .card
+    width: 210px
+    min-height: 340px
+    &__img
+      width: 100%
+      height: 260px
+  .last
+    &-card
+      width: 210px
+      height: 260px
+      &_icon
+        padding-top: 83px
+      &_info
+        font-size: 17px
+        line-height: 20px
+@media (max-width: 525px)
+  .trending
+    &__container
+      max-width: 93%
+@media ( max-width:480px)
+  .header
+    margin-bottom: 22px
+    &__container
+      width: 89%
+  .hero
+    &__container
+      width: 100%
+      &::before
+    &-wrapper
+      padding-left: 10px
+      padding-right: 4px
+    &__title
+      font-size: 30px
+      line-height: 40px
+      width: 96%
+      margin-top: 64px
+      margin-bottom: 40px
+      text-align: center
+    &__subtitle
+      font-size: 16px
+      line-height: 28px
+      width: 96%
+      text-align: center
+    &__info
+      margin-bottom: 60px
+      width: 100%
+    &__button
+      font-weight: bold
+      font-size: 16px
+      line-height: 22px
+      display: flex
+      margin: auto
+      margin-bottom: 22px
+      width: 257px
+    &__hashtag
+      padding: 2px 26px
+      margin: auto
+      width: 196px
+      display: flex
+  .frame
+    flex-wrap: wrap
+    justify-content: center
+    &__item
+      &:last-child
+        margin-top: 2px
+  .collection
+    margin-bottom: 110px
+    &__container
+      width: 96%
+  .base
+    width: 100%
+    display: block
+    &__mainimg
+      width: 100%
+      height: 300px
+      margin-bottom: 10px
+    &__img-1
+      width: 100%
+      height: 100%
+    &__subimg
+      flex-direction: inherit
+      width: 100%
+      height: 97px
+      margin-bottom: 20px
+    &__img
+      margin-right: 14px
+      width: 48%
+      margin-bottom: 0
+      height: 100%
+      &:last-child
+        margin-right: 0
+  .content
+    width: 96%
+    &__title
+      text-align: center
+      font-size: 28px
+      line-height: 36px
+      margin-top: 13px
+      margin-bottom: 20px
+    &__subtitle
+      text-align: center
+      font-size: 16px
+      line-height: 28px
+      margin-bottom: 0
+    &__link
+      display: none
+  .trending
+    &__container
+      max-width: 78%
+    &__header
+      margin-bottom: 36px
+    &__title
+      font-size: 28px
+      line-height: 36px
+      margin-bottom: 24px
+    &__link
+      font-size: 16px
+      line-height: 22px
+      margin-left: 13px
+  .card
+    width: 140px
+    min-height: 234px
+    margin-bottom: 20px
+    &__info
+      margin: 0
+    &__title
+      font-weight: bold
+      font-size: 16px
+      line-height: 20px
+    &__subtitle
+      justify-content: start
+    &__price
+      font-size: 14px
+      line-height: 24px
+      margin-right: 9px
+    &__img
+      width: 100%
+      height: 170px
+      margin-bottom: 11px
+  .last
+    &-card
+      width: 140px
+      height: 170px
+      &_icon
+        padding-top: 40px
+        margin-bottom: 15px
+      &_info
+        font-size: 17px
+        line-height: 20px
+@media (max-width: 390px)
+  .hero
+    margin-bottom: 65px
+    &-wrapper
+      padding-top: 380px
+    &__container
+      width: 100%
+      height: 899px
+      background-image: url(../img/phone-header.jpg)
+      &::before
+        display: none
+    &__title
+      margin-top: 21px
+      margin-bottom: 20px
+    &__info
+      margin-bottom: 23px
+    &__button
+      margin-bottom: 12px
+    .frame
+      &__item
+        font-size: 15px
+        margin-right: 13px
+        &__icon
+          padding-right: 4px
+  .trending
+    &__container
+      max-width: 90%
+@media (max-width: 335px)
+  .trending
+    &__container
+      max-width: 98%
