@@ -1,19 +1,34 @@
 .hero
   margin-bottom: 118px
   &-wrapper
+    position: absolute
     padding-top: 62px
     padding-left: 107px
   &__container
     width: 1280px
     height: 700px
+    overflow: hidden
     margin: auto
-    background-image: url(../img/hero.jpg)
+    position: relative
+    background-color: #E8EAE9
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      width: 100%
+      height: 100%
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: center
+      background-image: url(../img/hero.jpg)
   &__hashtag
     text-decoration: none
-    align-items: center
+    // align-items: center
     padding: 6px 16px
-    width: 175px
-    height: 32px
+    // width: 175px
+    // height: 32px
     background: rgba(54, 179, 126, 0.1)
     border-radius: 2000px
     font-style: normal
@@ -26,7 +41,7 @@
     // flex-direction: column
     // justify-content: space-between
     width: 652px
-    height: 400px
+    // height: 400px
     margin-bottom: 52px
   &__title
     font-family: 'HKGrotesk-Bold'
@@ -36,7 +51,7 @@
     letter-spacing: 0.2px
     width: 460px
     color: #183B56
-    margin-top: 32px
+    margin-top: 37px
     margin-bottom: 32px
   &__subtitle
     font-weight: normal
@@ -63,9 +78,10 @@
   &__icon
     padding-right: 8px
   &__item
+    font-family: 'HKGrotesk-Medium'
     display: flex
     align-items: center
-    margin-right: 31px
+    margin-right: 28px
     font-weight: 500
     font-size: 16px
     line-height: 20px

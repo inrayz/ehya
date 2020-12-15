@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ehya - интернет магазин брендовой одежды</title>
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="header">
-    <div class="container">
+    <div class="container header__container">
       <div class="header__wrapper">
-        <a href="#" class="header__logo">
+        <a href="index.html" class="header__logo">
           <img class="logo__img" src="img/logo.jpg" alt="Logo: ehya">
         </a>
         <ul class="navbar-menu">
@@ -34,6 +35,11 @@
         </ul>
           <!-- /.nav__links -->
         <button class="header__button">Войти</button>
+        <button class="menu-button navbar-menu__button">
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+        </button>
       </div>
       <!-- /.header__wrapper -->
     </div> 
@@ -44,7 +50,7 @@
     <div class="hero__container">
       <div class="hero-wrapper">
         <div class="hero__info">
-          <a href="" class="hero__hashtag"># READY TO BE COOL</a>
+          <a href="#" class="hero__hashtag"># READY TO BE COOL</a>
           <h1 class="hero__title">Каждый может быть крутым и&nbsp;модным</h1>
           <h2 class="hero__subtitle">Чтобы быть в тренде и стать модным, вам нужно носить отличную одежду и обновлять свой
             стиль. Всё это вы можете найти
@@ -63,7 +69,7 @@
     <!-- /.hero__container -->
   </section>
   <section class="collection">
-    <div class="container">
+    <div class=" collection__container container">
       <div class="collection-wrapper">
         <div class="base">
           <div class="base__mainimg">
@@ -77,7 +83,7 @@
         <div class="content">
           <h3 class="content__title">Новая зимняя коллекция</h3>
           <h4 class="content__subtitle">Сейчас зимний сезон. Вы можете увидеть больше из этой коллекции, нажав кнопку ниже. Успейте купить, пока коллекция есть
-          в наличии. Используйте код EHYA20, чтобы получить 20% скидку.</h4>
+          в наличии. Используйте код EHYA20, чтобы получить 20%&nbsp;скидку.</h4>
             <a class="content__link" href="#">Посмотреть коллекцию<img class="content__icon" src="img/right.svg" alt=""></a>
         </div>
         <!-- /.content -->
@@ -85,7 +91,7 @@
     </div>
   </section>
   <section class="trending">
-    <div class="container">
+    <div class="container trending__container">
       <div class="trending-wrapper">
         <div class="trending__header">
           <h2 class="trending__title">Тренды</h2>
@@ -181,5 +187,68 @@
       <!-- /.trending-wrapper -->
     </div>
   </section>
+  <section class="reviews">
+    <div class="reviews__container">
+      <div class="swiper-container reviews-slider">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <img src="img/quote-left.svg" alt="" class="reviews-slider__img">
+              <div class="reviews-slider__info">
+                <p class="reviews-slider__text">Мне очень нравятся дизайн и стили, которые создает Ehya. Они такие разные и новаторские. Я покупала несколько раз из
+                коллекций, и что мне нравится, это то, что они действительно неподвластны времени, а качество ткани просто превосходно.
+                Я с нетерпением жду новых коллекций<span class="text__visible">от сезона к сезону</span></p>
+                <span class="reviews-slider__name">Алисия Пума - клиент Fashun</span>
+              </div>
+              <!-- /.reviews-slider__info -->
+            </div>
+            <!-- /.reviews-slider__item -->
+          </div>
+          <!-- /.swiper-slide -->
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <img src="img/quote-left.svg" alt="" class="reviews-slider__img">
+              <div class="reviews-slider__info">
+                <p class="reviews-slider__text">Мне очень нравятся дизайн и стили, которые создает Ehya. Они такие разные и
+                  новаторские. Я покупала несколько раз из
+                  коллекций, и что мне нравится, это то, что они действительно неподвластны времени, а качество ткани просто
+                  превосходно.
+                  Я с нетерпением жду новых коллекций от сезона к сезону
+                </p>
+                <span class="reviews-slider__name">Алисия Пума - клиент Fashun</span>
+              </div>
+              <!-- /.reviews-slider__info -->
+            </div>
+            <!-- /.reviews-slider__item -->
+          </div>
+          <!-- /.swiper-slide -->
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <img src="img/quote-left.svg" alt="" class="reviews-slider__img">
+              <div class="reviews-slider__info">
+                <p class="reviews-slider__text">Мне очень нравятся дизайн и стили, которые создает Ehya. Они такие разные и
+                  новаторские. Я покупала несколько раз из
+                  коллекций, и что мне нравится, это то, что они действительно неподвластны времени, а качество ткани просто
+                  превосходно.
+                  Я с нетерпением жду новых коллекций от сезона к сезону</p>
+                <span class="reviews-slider__name">Алисия Пума - клиент Fashun</span>
+              </div>
+              <!-- /.reviews-slider__info -->
+            </div>
+            <!-- /.reviews-slider__item -->
+          </div>
+          <!-- /.swiper-slide -->
+          
+        </div>
+        <!-- /.swiper-wrapper -->
+        <div class="swiper-pagination">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
