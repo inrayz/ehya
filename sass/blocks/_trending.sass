@@ -13,6 +13,7 @@
     letter-spacing: 0.2px
     color: #183B56
   &__link
+    cursor: pointer
     text-decoration: none
     font-weight: normal
     font-size: 18px
@@ -23,20 +24,25 @@
     &:hover
       font-weight: bold
       color: #183B56
+    &_active
+      font-weight: bold
+      color: #183B56
 .card
   width: 260px
   min-height: 441px
   margin-bottom: 50px
   &-wrapper
-    display: flex
-    flex-wrap: wrap
-    justify-content: space-between
+    display: none
+    &__active
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
   &__img
     object-fit: cover
     margin-bottom: 20px
     border-radius: 8px
     width: 260px
-    height: 360px
+    height: 350px
   &__info
     margin-left: 10px
     margin-right: 10px

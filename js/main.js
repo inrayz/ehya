@@ -25,4 +25,18 @@ var mySwiper = new Swiper('.reviews-slider', {
   },
 })
 
+$(document).ready(function () {
+  var trendingLink = $(".trending__link");
+  var cardWrapper = $(".card-wrapper");
+
+  trendingLink.on('click', function (event) {
+    var activeWrapper = $(this).attr("data-target");
+    trendingLink.removeClass("trending__link_active");
+    cardWrapper.removeClass("card-wrapper__active");
+    $(activeWrapper).addClass("card-wrapper__active");
+    $(this).addClass("trending__link_active");
+  });
+});
+
+
 
