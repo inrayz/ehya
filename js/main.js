@@ -48,6 +48,7 @@ $(document).ready(function () {
     $(activeWrapper).addClass("card-wrapper__active");
     $(this).addClass("trending__link_active");
   });
+});  
   $(".subscribe__form").validate({
     errorClass: "invalid",
      messages: {
@@ -57,7 +58,7 @@ $(document).ready(function () {
       },
     },
   });
-});
+
 
 
 
