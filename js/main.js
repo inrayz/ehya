@@ -38,5 +38,17 @@ $(document).ready(function () {
   });
 });
 
+var mySwiper = new Swiper('.stories-swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.stories__button--next',
+    prevEl: '.stories__button--prev',
+  },
+})
+
 
 
