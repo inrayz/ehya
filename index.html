@@ -409,17 +409,17 @@
     </div>
   </section>
   <section class="stories">
-    <div class="container">
+    <div class="container stories__container">
       <div class="stories-wrapper">
         <div class="stories__info">
           <a href="#" class="stories__hashtag">ИСТОРИИ</a>
-          <h2 class="stories__title" lang="en">Это История Fashun</h2>
+          <h2 class="stories__title" lang="en"><span class="stories__title_visible">Это</span> История Fashun</h2>
           <p class="stories__subtitle">Ознакомьтесь с нашим рассказом о&nbsp;моде. Написано нашим дизайнером и&nbsp;специалистом.</p>
           <button class="stories__button stories__button--prev"><img src="img/btn-left.svg" alt=""></button>
           <button class="stories__button stories__button--next"><img src="img/btn-right.svg" alt=""></button>
         </div>
         <!-- /.stories__info -->
-        <div class="stories__items">
+        <!-- <div class="stories__items"> -->
           <div class="swiper-container stories-swiper">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
@@ -449,7 +449,7 @@
               </div>
             </div>
           </div>
-        </div>
+        <!-- </div> -->
         <!-- /.stories__items -->
       </div>
       <!-- /.stories-wrapper -->
@@ -457,11 +457,11 @@
     <!-- /.container -->
   </section>
   <section class="subscribe">
-    <div class="container">
+    <div class="container subscribe__container">
       <div class="subscribe-wrapper">
         <div class="subscribe__info">
           <h2 class="subscribe__title" lang="en">Подпишитесь</h2>
-          <span class="subscribe__subtitle">Напишите свой адрес электронной почты.<br> Мы будем присылать вам новости из мира
+          <span class="subscribe__subtitle">Напишите свой адрес электронной почты.<br class="carry"> Мы будем присылать вам новости из мира
             моды.</span>
         </div>
         <!-- /.subcribe__info -->
@@ -474,9 +474,9 @@
     </div>
   </section>
   <footer class="footer">
-    <div class="container">
+    <div class="footer__container container ">
       <div class="footer-wrapper">
-        <div class="footer__item">
+        <div class="footer__left">
           <div class="footer__info">
             <a href="index.html"><img class="footer__logo" src="img/footer-logo.jpg" alt=""></a>
             <h2 class="footer__info_title">Интернет-магазин брендовой одежды с оплатой онлайн</h2>
@@ -491,66 +491,72 @@
           <!-- /.footer__info -->
         </div>
         <!-- /.footer__item -->
-        <div class="footer__item">
-          <div class="footer__nav">
-            <h2 class="footer__nav_title footer__title">Навигация</h2>
-            <ul class="footer__nav_items">
-              <li class="footer__nav_item footer__item"><a class="footer__nav_link footer__link" href="">Новая коллекция</a></li>
-              <li class="footer__nav_item footer__item"><a class="footer__nav_link footer__link" href="">Трендовая одежда</a></li>
-              <li class="footer__nav_item footer__item"><a class="footer__nav_link footer__link" href="">Итория Fashun</a></li>
-              <li class="footer__nav_item footer__item"><a class="footer__nav_link footer__link" href="">Отзывы клиентов</a></li>
-              <li class="footer__nav_item footer__item"><a class="footer__nav_link footer__link" href="">Вся одежда</a></li>
-            </ul>
+        <div class="footer__right">
+          <div class="footer__items">
+            <div class="footer__nav">
+              <h2 class="footer__nav_title footer__title">Навигация</h2>
+              <ul class="footer__nav_items">
+                <li class="footer__nav_item footer__item"><a class="footer__nav_link footer__link" href="">Новая коллекция</a>
+                </li>
+                <li class="footer__nav_item footer__item"><a class="footer__nav_link footer__link" href="">Трендовая одежда</a>
+                </li>
+                <li class="footer__nav_item footer__item"><a class="footer__nav_link footer__link" href="">Итория Fashun</a></li>
+                <li class="footer__nav_item footer__item"><a class="footer__nav_link footer__link" href="">Отзывы клиентов</a>
+                </li>
+                <li class="footer__nav_item footer__item"><a class="footer__nav_link footer__link" href="">Вся одежда</a></li>
+              </ul>
+            </div>
+            <!-- /.footer__info -->
           </div>
-          <!-- /.footer__info -->
-        </div>
-        <!-- /.footer__item -->
-        <div class="footer__item">
-          <div class="footer__nav">
-            <h2 class="footer__nav_title footer__title">Сервисы</h2>
-            <ul class="footer__nav_items">
-              <li class="footer__nav_item footer__item"><a class="footer__nav_link footer__link" href="">Рассрочка на 6 мес</a>
-              </li>
-              <li class="footer__nav_item footer__item"><a class="footer__nav_link footer__link" href="">Кредит на 12 мес</a>
-              </li>
-              <li class="footer__nav_item footer__item"><a class="footer__nav_link footer__link" href="">Доставка по РФ</a></li>
-              <li class="footer__nav_item footer__item"><a class="footer__nav_link footer__link" href="">Возврат покупок</a>
-              </li>
-              <li class="footer__nav_item footer__item"><a class="footer__nav_link footer__link" href="">Акции и кэшбек</a></li>
-            </ul>
+          <!-- /.footer__item -->
+          <div class="footer__items">
+            <div class="footer__nav">
+              <h2 class="footer__nav_title footer__title">Сервисы</h2>
+              <ul class="footer__nav_items">
+                <li class="footer__nav_item footer__item"><a class="footer__nav_link footer__link" href="">Рассрочка на 6 мес</a>
+                </li>
+                <li class="footer__nav_item footer__item"><a class="footer__nav_link footer__link" href="">Кредит на 12 мес</a>
+                </li>
+                <li class="footer__nav_item footer__item"><a class="footer__nav_link footer__link" href="">Доставка по РФ</a></li>
+                <li class="footer__nav_item footer__item"><a class="footer__nav_link footer__link" href="">Возврат покупок</a>
+                </li>
+                <li class="footer__nav_item footer__item"><a class="footer__nav_link footer__link" href="">Акции и кэшбек</a></li>
+              </ul>
+            </div>
+            <!-- /.footer__info -->
           </div>
-          <!-- /.footer__info -->
-        </div>
-        <!-- /.footer__item -->
-        <div class="footer__item">
-          <div class="footer__nav">
-            <h2 class="footer__nav_title footer__title">Компания</h2>
-            <ul class="footer__nav_items">
-              <li class="footer__nav_item footer__item"><a class="footer__nav_link footer__link" href="">Об Ehya</a>
-              </li>
-              <li class="footer__nav_item footer__item"><a class="footer__nav_link footer__link" href="">Правила сайта</a>
-              </li>
-              <li class="footer__nav_item footer__item"><a class="footer__nav_link footer__link" href="">Обработка данных</a></li>
-              <li class="footer__nav_item footer__item"><a class="footer__nav_link footer__link" href="">Вакансии</a>
-              </li>
-            </ul>
+          <!-- /.footer__item -->
+          <div class="footer__items">
+            <div class="footer__nav">
+              <h2 class="footer__nav_title footer__title">Компания</h2>
+              <ul class="footer__nav_items">
+                <li class="footer__nav_item footer__item"><a class="footer__nav_link footer__link" href="">Об Ehya</a>
+                </li>
+                <li class="footer__nav_item footer__item"><a class="footer__nav_link footer__link" href="">Правила сайта</a>
+                </li>
+                <li class="footer__nav_item footer__item"><a class="footer__nav_link footer__link" href="">Обработка данных</a>
+                </li>
+                <li class="footer__nav_item footer__item"><a class="footer__nav_link footer__link" href="">Вакансии</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.footer__info -->
           </div>
-          <!-- /.footer__info -->
-        </div>
-        <!-- /.footer__item -->
-        <div class="footer__item">
-          <div class="footer__nav">
-            <h2 class="footer__nav_title footer__title">Контакты</h2>
-            <ul class="footer__nav_items">
-              <li class="footer__nav_item footer__item"><a class="footer__nav_link footer__link" href="">Группа Фейсбук</a>
-              </li>
-              <li class="footer__nav_item footer__item"><a class="footer__nav_link footer__link" href="">Канал YouTube</a>
-              </li>
-            </ul>
+          <!-- /.footer__item -->
+          <div class="footer__items">
+            <div class="footer__nav">
+              <h2 class="footer__nav_title footer__title">Контакты</h2>
+              <ul class="footer__nav_items">
+                <li class="footer__nav_item footer__item"><a class="footer__nav_link footer__link" href="">Группа Фейсбук</a>
+                </li>
+                <li class="footer__nav_item footer__item"><a class="footer__nav_link footer__link" href="">Канал YouTube</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.footer__info -->
           </div>
-          <!-- /.footer__info -->
+          <!-- /.footer__item -->
         </div>
-        <!-- /.footer__item -->
       </div>
       <!-- /.footer-wrapper -->
     </div>

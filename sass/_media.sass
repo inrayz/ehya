@@ -44,7 +44,9 @@
       height: 296px
     &_icon
       padding-top: 99px
-
+  .swiper
+    &-container
+      width: 850px
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -114,7 +116,7 @@
         margin-bottom: 15px
   .swiper
     &-container
-      width: 100%
+      width: 660px
   .reviews
     &__container
       width: 630px
@@ -141,6 +143,22 @@
       margin-bottom: 36px
     &__items
       margin: auto
+  .subscribe
+    &-wrapper
+      flex-direction: column
+      text-align: center
+      padding-top: 72px
+      padding-bottom: 80px
+    &__info
+      margin-bottom: 56px
+  .footer
+    &__container
+      max-width: 647px
+    &-wrapper
+      padding-top: 64px
+      width: 100%
+    &__items
+      margin-bottom: 23px
 @media (max-width: 768px)
   .hero
     &__container
@@ -248,10 +266,80 @@
   //   &__subimg
   //     flex-direction: inherit
   .reviews
+    margin-bottom: 64px
     &__container
       width: 96%
     &-slider
       width: 100%
+      &__img
+        width: 70px
+  .footer
+    &-wrapper
+      flex-wrap: wrap
+    &__container
+      width: 80%
+    &__left
+      order: 2
+      width: 100%
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin: 0
+      text-align: center
+    &__right
+      width: 223px
+  .stories
+    &__container
+      max-width: 90%
+    &__items
+      width: 73%
+    &__subtitle
+      width: 100%
+    &-slider
+      &_left, &_right
+        width: 280px
+      &_info
+        width: 270px
+      &_title
+        font-weight: 500
+        font-size: 20px
+        line-height: 24px
+        margin-bottom: 16px
+      &_next
+        font-weight: 600
+        font-size: 16px
+        line-height: 22px
+      &_img
+        width: 270px
+      &_item
+        display: flex
+        flex-direction: column
+        align-items: center
+  .swiper
+    &-container
+      width: 100%
+  .stories
+    &-slider
+      &_info
+        top: -18px
+      &_title
+        width: 266px
+        padding-left: 22px
+    &-wrapper
+      padding-top: 40px
+    &__info
+      margin-bottom: 18px
+    &__title
+      font-weight: bold
+      font-size: 28px
+      line-height: 36px
+      &_visible
+        display: none
+    &__subtitle
+      font-size: 16px
+      line-height: 28px
+    &__button
+      width: 48px
 @media (max-width: 635px)
   .trending
     &__container
@@ -419,6 +507,54 @@
       &_info
         font-size: 17px
         line-height: 20px
+  .subscribe
+    &-wrapper
+      padding-bottom: 132px
+    &__container
+      max-width: 90%
+    &__info
+      width: 100%
+      margin-bottom: 36px
+    &__title
+      font-weight: bold
+      font-size: 28px
+      line-height: 36px
+    &__subtitle
+      font-weight: normal
+      font-size: 16px
+      line-height: 28px
+  .carry
+    display: none
+  .search
+    width: 100%
+    &__input
+    &__button
+      position: relative
+      width: 100%
+      margin: 0
+      margin-top: 10px
+  .footer
+    &__logo
+      width: 77px
+    &__link
+      font-size: 14px
+      line-height: 20px
+    &__title
+      font-weight: bold
+      font-size: 16px
+      line-height: 22px
+    &__info
+      &_title
+        font-size: 14px
+        line-height: 24px
+  .stories
+    &-slider
+      &_left
+        width: 272px
+        margin-right: 0
+      &_right
+        width: 272px
+        margin-right: 0
 @media (max-width: 390px)
   .header
     padding-left: 0
@@ -484,7 +620,12 @@
   .text
     &_none
       display: none
+  .footer__container
+    width: 263px
 @media (max-width: 335px)
   .trending
     &__container
       max-width: 290px
+  .subscribe
+    &__container
+      width: 280px
