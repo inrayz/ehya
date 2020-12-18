@@ -65,4 +65,8 @@ menuButton.addEventListener('click', function () {
   document.querySelector(".navbar-menu").classList.toggle('navbar-menu--visible')
 })
 
-
+var closeNavbar = document.querySelector(".navbar-menu__close--visible");
+closeNavbar.addEventListener('click', function () {
+  console.log('Клик по кнопке закрыть');
+  document.querySelector(".navbar-menu").classList.toggle('navbar-menu--visible')
+})

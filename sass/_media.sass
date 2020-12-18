@@ -24,8 +24,7 @@
         border-radius: 50%
   .search
     &__button
-      &__button
-        transition: .2s
+      transition: .2s
       &:hover
         background-color: #306185
   .footer
@@ -42,6 +41,11 @@
         transition: .2s
         &:hover
           color: #0b479b
+  .thankyou
+    &__button
+      transition: .2s
+      &:hover
+        background-color: #306185
 @media ( max-width: 1300px)
   .hero
     &__container
@@ -156,6 +160,7 @@
   .swiper
     &-container
       width: 660px
+      margin: auto
   .reviews
     &__container
       width: 630px
@@ -238,22 +243,36 @@
         &_hidden
           display: none
         &_visible
-          display: flex
+          display: block
+          margin: auto
   .navbar
     &-menu
       display: none
       position: fixed
+      width: 95%
       background-color: #fff
+      top: 10px
+      box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16)
+      right: 0
       left: 0
-      top: 70px
-      right: -15px
-      bottom: 0
+      margin: auto
+      padding: 36px 24px
+      max-height: 100%
+      overflow-y: auto
       &__item
         margin-bottom: 35px
+        width: 100%
       &--visible
         display: flex
         flex-direction: column
-        align-items: center
+        align-items: flex-start
+      &__close
+        &--visible
+          display: block
+          position: absolute
+          right: 19px
+          top: 16px
+          text-decoration: none
   .menu
     &-button
       display: flex
@@ -309,10 +328,13 @@
         margin-bottom: 25px
       &_info
         font-size: 24px
-
   .text
     &_visible
       display: none
+  .thankyou
+    padding: 65px 0
+    &__container
+      width: 95%
 @media (max-width: 768px)
   .hero
     &-wrapper
@@ -452,9 +474,14 @@
     padding-top: 17px
     &__container
       width: 272px
+    &__button
+      &--mobile
+        &_visible
+          width: 100%
   .navbar
     &-menu
-      top: 60px
+      top: 10px
+      width: 304px
       &__item
         margin-bottom: 20px
   .hero
@@ -592,7 +619,7 @@
         line-height: 20px
   .subscribe
     &-wrapper
-      padding-top: 55px
+      padding-top: 64px
       padding-bottom: 120px
     &__container
       max-width: 90%
