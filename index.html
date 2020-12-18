@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="header">
+  <div class="header header__mobile_fixed">
     <div class="container header__container">
       <div class="header__wrapper">
         <a href="index.html" class="header__logo">
@@ -32,9 +32,12 @@
           <li class="navbar-menu__item">
             <a href="#" class="navbar-menu__link">Контакты</a>
           </li>
+          <li class="navbar-menu__item">
+            <button class="header__button header__button--mobile_visible">Войти</button>
+          </li>
         </ul>
           <!-- /.nav__links -->
-        <button class="header__button">Войти</button>
+        <button class="header__button header__button--mobile_hidden">Войти</button>
         <button class="menu-button navbar-menu_button">
           <span class="menu-button__line"></span>
           <span class="menu-button__line"></span>

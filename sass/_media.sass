@@ -160,6 +160,17 @@
     &__items
       margin-bottom: 23px
 @media (max-width: 768px)
+  body
+    padding-top: 110px
+  .header
+    background-color: #fff
+    &__mobile
+      &_fixed
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        z-index: 999
   .hero
     &__container
   .trending
@@ -175,12 +186,30 @@
     margin-bottom: 30px
     &__container
       width: 650px
+    &__wrapper
+      flex-wrap: wrap
+    &__button
+      &--mobile
+        &_hidden
+          display: none
+        &_visible
+          display: flex
   .navbar
     &-menu
       display: none
-  .header
-    &__button
-      display: none
+      position: fixed
+      background-color: #fff
+      left: 0
+      top: 70px
+      right: -15px
+      bottom: 0
+      &__item
+        margin-bottom: 35px
+      &--visible
+        display: flex
+        flex-direction: column
+        align-items: center
+
   .menu
     &-button
       display: flex
@@ -368,11 +397,18 @@
     &__container
       max-width: 93%
 @media ( max-width:480px)
+  body
+    padding-top: 88px
   .header
     margin-bottom: 22px
     padding-top: 17px
     &__container
       width: 272px
+  .navbar
+    &-menu
+      top: 60px
+      &__item
+        margin-bottom: 20px
   .hero
     &__container
       width: 100%
