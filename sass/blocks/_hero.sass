@@ -1,29 +1,37 @@
 .hero
   margin-bottom: 118px
   &-wrapper
-    position: absolute
+    width: 1280px
+    max-width: 95%
+    margin: auto
+    min-height: 700px
     padding-top: 62px
     padding-left: 107px
-  &__container
-    width: 1280px
-    height: 700px
-    overflow: hidden
-    border-radius: 8px
-    margin: auto
-    position: relative
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    background-image: url(../img/hero.jpg)
     background-color: #E8EAE9
-    &::before
-      content: ''
-      position: absolute
-      top: 0
-      right: 0
-      bottom: 0
-      width: 100%
-      height: 100%
-      background-repeat: no-repeat
-      background-size: cover
-      background-position: center
-      background-image: url(../img/hero.jpg)
+    height: 100%
+    padding-bottom: 40px
+    border-radius: 8px
+  // &__container
+  //   width: 1280px
+  //   min-height: 700px
+  //   margin: auto
+  //   position: relative
+    // &::before
+    //   content: ''
+    //   position: absolute
+    //   top: 0
+    //   right: 0
+    //   bottom: 0
+    //   width: 100%
+    //   height: 100%
+    //   background-repeat: no-repeat
+    //   background-size: cover
+    //   background-position: center
+    //   background-image: url(../img/hero.jpg)
   &__hashtag
     text-decoration: none
     // align-items: center
