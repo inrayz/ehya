@@ -33,7 +33,7 @@ var mySwiper = new Swiper('.stories-swiper', {
   navigation: {
     nextEl: '.stories-slider-button--next',
     prevEl: '.stories-slider-button--prev', 
-    disabledClass: 'stories-slider-button--prev--disabled',
+    disabledClass: 'stories-slider-button--disabled',
   },
 })
 
