@@ -425,8 +425,13 @@
     &__subtitle
       width: 100%
     &-slider
-      &_left, &_right
+      &_left
         width: 280px
+        margin: 0
+        margin-bottom: 10px
+      &_right
+        width: 280px
+        margin: 0
       &_info
         width: 270px
       &_title
@@ -755,6 +760,14 @@
   .trending
     &__container
       max-width: 90%
+  .stories
+    margin-bottom: 45px
+    &__title
+      margin-top: 19px
+    &-slider
+      &-button
+        width: 48px
+        height: 48px
   .card
     &__price
       margin-right: 13px
@@ -771,6 +784,7 @@
         line-height: 36px
         text-align: center
         letter-spacing: 0.12px
+        margin-bottom: 22px
       &__name
         width: 145px
         font-weight: bold
@@ -779,7 +793,7 @@
         text-align: center
         letter-spacing: 0.2px
       &__img
-        margin-bottom: 23px
+        margin-bottom: 20px
   .text
     &_none
       display: none
