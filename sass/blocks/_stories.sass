@@ -1,22 +1,41 @@
 .stories
   margin-bottom: 116px
-  &-slide
-    width: 100%
   &-wrapper
     display: flex
     justify-content: space-between
     border-top: 1px solid #E5EAF4
     padding-top: 120px
-  &__button
-    width: 56px
-    height: 56px
-    border: none
-    box-sizing: border-box
-    background-color: transparent
-    cursor: pointer
-    padding: 0
-    &--prev
-      margin-right: 15px
+  &-slide
+    width: 100%
+  &-slider
+    &-navigations
+      display: flex
+    &__button
+      width: 54px
+      height: 56px
+      border: none
+      box-sizing: border-box
+      // background-color: transparent
+      cursor: pointer
+      padding: 0
+      &:hover
+        background-color: rgba(21, 37, 72, 0.1)
+        border-radius: 50%
+      &--prev
+        margin-right: 15px
+        background: url(../img/btn-prev.svg)
+        &--disabled
+          background: url(https://maria-shkurko.ru/ehya/img/button-prev-disabled.svg)
+          background-size: contain
+          &:hover
+      &--next
+        background: url(../img/btn-next.svg)
+        background-size: contain
+        width: 56px
+        &--disabled
+          background: url(https://maria-shkurko.ru/ehya/img/button-next-disabled.svg)
+          background-size: contain
+
   &__info
     width: 392px
   &__hashtag

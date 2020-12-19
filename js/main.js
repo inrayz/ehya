@@ -28,11 +28,11 @@ var mySwiper = new Swiper('.stories-swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
-
+   
   // Navigation arrows
   navigation: {
-    nextEl: '.stories__button--next',
-    prevEl: '.stories__button--prev',
+    nextEl: '.stories-slider__button--next',
+    prevEl: '.stories-slider__button--prev',
   },
 })
 
@@ -70,3 +70,43 @@ closeNavbar.addEventListener('click', function () {
   console.log('Клик по кнопке закрыть');
   document.querySelector(".navbar-menu").classList.toggle('navbar-menu--visible')
 })
+
+var modalButton = $('[data-toggle=modal]');
+var closeModalButton = $('.modal__close');
+modalButton.on('click', openModal);
+closeModalButton.on('click', closeModal);
+
+function openModal() {
+  var modalOverlay = $('.modal__overlay');
+  var modalDialog = $('.modal__dialog');
+  modalOverlay.addClass('modal__overlay--visible');
+  modalDialog.addClass('modal__dialog--visible');
+}
+function closeModal(event) {
+  event.preventDefault();
+  var modalOverlay = $('.modal__overlay');
+  var modalDialog = $('.modal__dialog');
+  modalOverlay.removeClass('modal__overlay--visible');
+  modalDialog.removeClass('modal__dialog--visible');
+}
+
+$('body').on('click', '.password-checkbox', function(){
+	if ($(this).is(':checked')){
+		$('#password-input').attr('type', 'text');
+	} else {
+		$('#password-input').attr('type', 'password');
+	}
+}); 
+
+$(".modal__form").validate({
+     messages: {
+      login: {
+        required: "Введите логин",
+        minlenght: "Логин должен быть не менее 5 символов"
+      },
+      password:{
+        required: "Введите пароль",
+        minlenght: "Пароль должен быть не менее 6 символов"
+      },
+    },
+  });

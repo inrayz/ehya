@@ -1,0 +1,105 @@
+.modal
+  &__overlay
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background-color: rgba(21, 37, 72, 0.1)
+    z-index: 101
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.2s
+    &--visible
+      visibility: visible
+      opacity: 1
+  &__dialog
+    position: fixed
+    top: 50%
+    left: 50%
+    width: 400px
+    max-height: 100%
+    padding: 40px 60px 50px
+    background-color: #ffffff
+    border-radius: 8px
+    color: #183B56
+    transform: translate(-50%, -50%)
+    overflow: auto
+    z-index: 102
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.2s
+    &--visible
+      visibility: visible
+      opacity: 1
+  &__close
+    position: absolute
+    top: 20px
+    right: 20px
+    text-decoration: none
+    cursor: pointer
+  &__title
+    margin: 0
+    font-weight: 700
+    font-size: 20px
+    line-height: 26px
+    text-align: center
+    text-transform: uppercase
+  &__form
+    display: -ms-flexbox
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-direction: column
+    width: 100%
+  &__input
+    width: 100%
+    padding: 16px 16px 16px 48px
+    background-color: #FFFFFF
+    border: 1px solid #C3CAD9
+    border-radius: 8px
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    color: #183B56
+    &-group
+      position: relative
+      width: 100%
+      margin-top: 15px
+  &__icon
+    position: absolute
+    top: 16px
+    left: 20px
+    font-size: 16px
+    line-height: 18px
+  &__checkbox
+    margin-top: 6px
+    padding-left: 4px
+    -ms-flex-item-align: start
+    align-self: flex-start
+  &__button
+    width: 100%
+    margin-top: 20px
+    padding: 15px 22px
+    background-color: transparent
+    border: 2px solid #1565D8
+    border-radius: 8px
+    color: #1565D8
+    font-weight: 700
+    font-size: 16px
+    line-height: 22px
+    cursor: pointer
+    opacity: 1
+.fa
+  &-user
+    &::before
+      content: "\f007"
+      font-family: FontAwesome
+      font-style: normal
+      font-weight: normal
+  &-key
+    &::before
+      content: "\f084"
+      font-family: FontAwesome
+      font-style: normal
+      font-weight: normal
