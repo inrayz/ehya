@@ -10,7 +10,7 @@
   &-slider
     &-navigations
       display: flex
-    &__button
+    &-button
       width: 54px
       height: 56px
       border: none
@@ -18,24 +18,29 @@
       // background-color: transparent
       cursor: pointer
       padding: 0
+      margin-right: 22px
       &:hover
         background-color: rgba(21, 37, 72, 0.1)
-        border-radius: 50%
+      &--disabled
+        background-color: transparent
       &--prev
-        margin-right: 15px
-        background: url(../img/btn-prev.svg)
+        background: url(https://maria-shkurko.ru/ehya/img/button-prev.svg)
+        border-radius: 50%
         &--disabled
           background: url(https://maria-shkurko.ru/ehya/img/button-prev-disabled.svg)
-          background-size: contain
+          cursor: auto
           &:hover
+            background-color: transparent
       &--next
-        background: url(../img/btn-next.svg)
-        background-size: contain
         width: 56px
+        background: url(https://maria-shkurko.ru/ehya/img/button-next.svg)
+        border-radius: 50%
         &--disabled
+          width: 56px
           background: url(https://maria-shkurko.ru/ehya/img/button-next-disabled.svg)
-          background-size: contain
-
+          cursor: auto
+          &:hover
+            background-color: transparent
   &__info
     width: 392px
   &__hashtag

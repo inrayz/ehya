@@ -27,15 +27,15 @@ var mySwiper = new Swiper('.reviews-slider', {
 var mySwiper = new Swiper('.stories-swiper', {
   // Optional parameters
   direction: 'horizontal',
-  loop: true,
-   
+  loop: false,
+
   // Navigation arrows
   navigation: {
-    nextEl: '.stories-slider__button--next',
-    prevEl: '.stories-slider__button--prev',
+    nextEl: '.stories-slider-button--next',
+    prevEl: '.stories-slider-button--prev',
+    disabledClass: 'stories-slider-button--prev--disabled',
   },
 })
-
 
 $(document).ready(function () {
   var trendingLink = $(".trending__link");
@@ -110,3 +110,10 @@ $(".modal__form").validate({
       },
     },
   });
+
+// var buttonNext = document.querySelector(".stories-slider__button--next");
+// buttonNext.addEventListener('click', function () {
+//   console.log('Клик по кнопке');
+//   document.querySelector(".stories-slider__button").classList.toggle('stories-slider__button--prev')
+//   document.querySelector(".stories-slider__button").classList.remove('stories-slider__button--prev--disabled')
+// }) 
