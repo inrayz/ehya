@@ -32,7 +32,7 @@ var mySwiper = new Swiper('.stories-swiper', {
   // Navigation arrows
   navigation: {
     nextEl: '.stories-slider-button--next',
-    prevEl: '.stories-slider-button--prev',
+    prevEl: '.stories-slider-button--prev', 
     disabledClass: 'stories-slider-button--prev--disabled',
   },
 })
