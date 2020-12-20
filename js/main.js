@@ -90,6 +90,25 @@ function closeModal(event) {
   modalDialog.removeClass('modal__dialog--visible');
 }
 
+$(document).keyup(function(esc) {
+    if (esc.which == 27) {
+      $(".modal__overlay").removeClass("modal__overlay--visible")
+      $(".modal__dialog").removeClass("modal__dialog--visible")
+  }
+});  
+
+document.addEventListener('click', function (e) {
+  // console.log(e.target.classList.value);
+  var click = e.target.classList.value;
+  var modalOverlay = $('.modal__overlay');
+  var modalDialog = $('.modal__dialog');
+  if (click === 'modal__overlay modal__overlay--visible') {
+    modalDialog.removeClass('modal__dialog--visible');
+    modalOverlay.removeClass('modal__overlay--visible');
+  };
+})
+
+
 $('body').on('click', '.password-checkbox', function(){
 	if ($(this).is(':checked')){
 		$('#password-input').attr('type', 'text');
