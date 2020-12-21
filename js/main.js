@@ -106,7 +106,7 @@ document.addEventListener('click', function (e) {
     modalDialog.removeClass('modal__dialog--visible');
     modalOverlay.removeClass('modal__overlay--visible');
   };
-})
+});
 
 
 $('body').on('click', '.password-checkbox', function(){
