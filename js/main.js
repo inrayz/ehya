@@ -115,7 +115,7 @@ $('body').on('click', '.password-checkbox', function(){
 	} else {
 		$('#password-input').attr('type', 'password');
 	}
-}); 
+});
 
 $(".modal__form").validate({
      messages: {
