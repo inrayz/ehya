@@ -129,6 +129,24 @@ $(".modal__form").validate({
       },
     },
   });
+ 
+$(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 600);
+    });
+});  
+$(document).ready(function(){
+    $("#to-top").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 400);
+    });
+});
+
 
 // var buttonNext = document.querySelector(".stories-slider__button--next");
 // buttonNext.addEventListener('click', function () {
